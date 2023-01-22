@@ -1,0 +1,18 @@
+version: "3"
+services:
+  vnc:
+    image: dorowu/ubuntu-desktop-lxde-vnc:latest
+    ports:
+      - 8080:80
+    deploy:
+      resources:
+        limits:
+          cpus: "2"
+          memory: 5000m
+        reservations:
+          cpus: "2"
+          memory: 3000M
+    volumes:
+      - ./data_container/.mozilla:/root/.mozilla
+      - ./data_container/rambox:/root/.config/rambox
+      - ./data_container/opt:/opt

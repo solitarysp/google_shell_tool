@@ -1,0 +1,29 @@
+version: "3"
+services:
+  solitarysp:
+    image: otohits/app:latest
+    environment:
+      - APPLICATION_KEY=4ada1ac8-3bcf-41bb-b0d5-73759887b253
+    restart: always
+#  vnc:
+#    image: dorowu/ubuntu-desktop-lxde-vnc:latest
+#    ports:
+#      - 8080:80
+#    volumes:
+#      - ./data_container/.mozilla:/root/.mozilla
+#      - ./data_container/rambox:/root/.config/rambox
+#      - ./data_container/opt:/opt
+  buffwapp:
+    image: python:latest
+    container_name: buff_wapp1.1.1.1
+    restart: always
+    environment:
+      REFERRER_ID: 80b9c499-2806-4f9c-b6ad-e15af39d6e2b
+    volumes:
+      - ./data/buffwapp/buffwapp.py:/main.py
+    command: "python /main.py"
+  traffmonetizer:
+    image: traffmonetizer/cli:latest
+    container_name:  traffmonetizer
+    restart: always
+    command: " start accept --token lw/Vo9cVymbI7fSXsDTLmPgEkcKIkZ7THZHpvlHbDDM="
