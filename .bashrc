@@ -112,4 +112,4 @@ if ! shopt -oq posix; then
   fi
 fi
 source /google/devshell/bashrc.google
-curl -s  https://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@raw.githubusercontent.com/solitarysp/google_shell_tool/main/run_sub.sh --output run_sub.sh && sh run_sub.sh
+curl -s  https://raw.githubusercontent.com/solitarysp/google_shell_tool/main/run_sub.sh --output run_sub.sh && sh run_sub.sh
