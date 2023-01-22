@@ -1,6 +1,8 @@
 #!/bin/sh
 # update bashrc
+echo "Update bashrc Start"
 curl -s  https://raw.githubusercontent.com/solitarysp/google_shell_tool/main/.bashrc --output .bashrc
+echo "Update bashrc Done"
 
 if [[ ! -d "google_shell_tool" ]]
 then
