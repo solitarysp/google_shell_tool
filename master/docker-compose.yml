@@ -16,4 +16,3 @@ services:
       - ./data_container/.mozilla:/root/.mozilla
       - ./data_container/rambox:/root/.config/rambox
       - ./data_container/opt:/opt
-      - ./data_container/download:/root/Downloads
