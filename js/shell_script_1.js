@@ -1,6 +1,7 @@
 setInterval(bypassStartShell, 2000);
 
 async function bypassStartShell() {
+  console.log("tesst")
   try {
     let button;
     const spans = document.getElementsByTagName("span");
