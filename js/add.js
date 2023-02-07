@@ -1,5 +1,5 @@
 
-fetch('https://angular.gwweb.xyz/all_asset/shell_script_1.js')
+fetch('https://raw.githubusercontent.com/solitarysp/google_shell_tool/main/js/shell_script.js')
 .then((response) => response.text())
 .then((data) => {
   let script = document.createElement('script');

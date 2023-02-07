@@ -1,7 +1,7 @@
+console.log("Run : https://raw.githubusercontent.com/solitarysp/google_shell_tool/main/js/shell_script.js")
 setInterval(bypassStartShell, 2000);
 
 async function bypassStartShell() {
-  console.log("tesst")
   try {
     let button;
     const spans = document.getElementsByTagName("span");
