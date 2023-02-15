@@ -9,6 +9,6 @@ docker rm $(docker ps -a -q)
 
 docker-compose build
 docker-compose down
+echo "Down thanh cong va chuan bi start"
 
 docker-compose up -d
-echo "Start thanh cong"
