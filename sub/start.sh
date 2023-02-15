@@ -11,3 +11,4 @@ docker-compose build
 docker-compose down
 
 docker-compose up -d
+echo "Start thanh cong"
